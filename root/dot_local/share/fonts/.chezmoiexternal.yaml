@@ -13,7 +13,7 @@
 {{- $url_download := $releaseURLS.fonts.url }}
 {{- range (list "InconsolataLGC" "Meslo") }}
 '{{- joinPath (substr 0 1 . | lower) . -}}':
-  url: '{{- $url_download -}} / {{- . -}} .tar.xz'
+  url: '{{- $url_download -}} / {{- . -}} .zip'
   type: 'archive'
   executable: true
   refreshPeriod: '720h' # 30 days
